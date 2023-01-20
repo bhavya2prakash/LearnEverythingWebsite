@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFD7E4;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>WELCOME TO LEARNING</h1>
+<hr>
+
+<h2>GET STARTED!!!</h2>
+
+<div id="myBtnContainer">
+  <button class="btn " onclick="filterSelection('sci')">SCIENCE</button>
+  <button class="btn" onclick="filterSelection('eng')"> ENGLISH</button>
+  <button class="btn" onclick="filterSelection('cod')"> CODING</button>
+<button class="btn" onclick="filterSelection('sports')"> SPORTS</button>
+<button class="btn" onclick="filterSelection('dance')"> DANCING</button>
+<button class="btn" onclick="filterSelection('music')"> MUSICAL INSTRUMENTS</button>
+<button class="btn" onclick="filterSelection('craft')"> CRAFTING</button>
+<button class="btn active" onclick="filterSelection('paint')"> PAINTING</button>
+<button class="btn" onclick="filterSelection('cook')"> COOKING</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column sci">
+    <div class="content">
+      <a href="https://youtu.be/4so9ZVNbEAY" ><img src="phy.jpg" alt="COURSE 1" style="width:100%"></a>
+      <h4>PHYSICS</h4>
+      <p>Learn Mechanics,Electrostatics,Modern Physics and many more....</p>
+    </div>
+  </div>
+  <div class="column sci">
+    <div class="content">
+<a href="https://youtu.be/5HNBbLkpNSw" ><img src="che.jpg" alt="COURSE 2" style="width:100%"></a>
+      <h4>CHEMISTRY</h4>
+      <p>Learn Periodic Table,Atomic Structure,Molar Mass and many more....</p>
+    </div>
+  </div>
+  <div class="column sci">
+    <div class="content">
+    <a href="https://youtu.be/oNCIgGg-EhU" ><img src="maths.jpg" alt="COURSE 3" style="width:100%"></a>
+      <h4>MATHEMATICS</h4>
+      <p>Learn Trignometry,Geometry,Logarithms and many more.....</p>
+    </div>
+  </div>
+  
+  <div class="column sci">
+    <div class="content">
+      <a href="https://youtu.be/P9TV3vrbeOw" ><img src="bio.jpg" alt="Course 4" style="width:100%"></a>
+      <h4>BIOLOGY</h4>
+      <p>Learn Digestive system,Heart,Brain and many more........</p>
+    </div>
+  </div>
+  <div class="column eng">
+    <div class="content">
+    <a href="https://youtu.be/cJkNIU_dVaA" ><img src="voc.jpg" alt="Course 1" style="width:100%"></a>
+      <h4>ENGLISH VOCABULARY</h4>
+      <p>Master yourself with right English vocabularies!!!!!</p>
+    </div>
+  </div>
+  <div class="column eng">
+    <div class="content">
+    <a href="https://youtu.be/QYyXOkuqpx8" ><img src="lit.png" alt="Course 2" style="width:100%"></a>
+      <h4>ENGLISH LITERATURE</h4>
+      <p>Lear English Literature with our best approved courses!!!!!</p>
+    </div>
+  </div>
+
+  <div class="column cod">
+    <div class="content">
+      <a href="https://youtu.be/-CpG3oATGIs" ><img src="c.jpg" alt="Course 1" style="width:100%"></a>
+      <h4>C</h4>
+      <p>Learn the most basic programming language C.....</p>
+    </div>
+  </div>
+  <div class="column cod">
+    <div class="content">
+    <a href="https://youtu.be/vLnPwxZdW4Y" ><img src="cp.jpg" alt="Course 2" style="width:100%"></a>
+      <h4>C++</h4>
+      <p>Learn the most used programming language C++.......</p>
+    </div>
+  </div>
+  <div class="column cod">
+    <div class="content">
+    <a href="https://youtu.be/3u1fu6f8Hto" ><img src="java.png" alt="Course 3" style="width:100%"></a>
+      <h4>JAVA</h4>
+      <p>Learn the programming language JAVA and make your software responsive....</p>
+    </div>
+  </div>
+<div class="column cod">
+    <div class="content">
+     <a  href=https://www.youtube.com/watch?v=_uQrJ0TkZlc><img src="py.jpg" alt="Course 4" style="width:100%"></a>
+      <h4>PYTHON</h4>
+      <p>Learn the programming language PYTHON and make your own Artificial Intelligence....</p>
+    </div></div>
+
+    <div class="column cod">
+    <div class="content">
+    <a href="https://youtu.be/JTDK6r1GuUU" ><img src="sql.png" alt="Course 5" style="width:100%"></a>
+      <h4>MICROSOFT SQL</h4>
+      <p>Learn the coding in microsoft sql and make your database....</p>
+
+    </div>
+  </div>
+<div class="column sports">
+    <div class="content">
+   <a href="https://youtu.be/M5MD5i6VpYQ" ><img src="s.jpeg" alt="game 1" style="width:100%"></a>
+      <h4>CRICKET</h4>
+      <p>You can live your passion by learning the skills to how to play cricket.....</p>
+    </div></div>
+<div class="column sports">
+    <div class="content">
+    <a href="https://youtu.be/TuM5Uh4ii3Q" ><img src="s1.jpg" alt="game 2" style="width:100%"></a>
+      <h4>TENNIS</h4>
+      <p>You can live your passion by learning the skills to how to play tennis.....</p>
+    </div></div><div class="column sports">
+    <div class="content">
+   <a href="https://youtu.be/_RwfGl2DbeU" > <img src="s4.jpg" alt="game 3" style="width:100%"></a>
+      <h4>BASKETBALL</h4>
+      <p>You can live your passion by learning the skills to how to play basketball.....</p>
+    </div></div><div class="column sports">
+    <div class="content">
+    <a href="https://youtu.be/cMtgAMtTMdA" ><img src="s5.jpg" alt="game 4" style="width:100%"></a>
+      <h4>HOCKEY</h4>
+      <p>You can live your passion by learning the skills to how to play hockey.....</p>
+    </div></div><div class="column sports">
+    <div class="content">
+    <a href="https://youtu.be/dFLaabgXhpc" ><img src="s3.jpg" alt="game 5" style="width:100%"></a>
+      <h4>FOOTBALL</h4>
+      <p>You can live your passion by learning the skills to how to play football.....</p>
+    </div></div>
+<div class="column dance">
+    <div class="content">
+    <a href="https://youtu.be/q3pZmNtYpWg" ><img src="d4.jpg" alt="dance 1" style="width:100%"></a>
+      <h4>BELLY DANCING</h4>
+      <p>You can live your passion  by learning Belly Dancing with our best reccomended classes.....</p>
+    </div></div>
+<div class="column dance">
+    <div class="content">
+    <a href="https://youtu.be/L8dPVVz-BGI" ><img src="d2.jpg" alt="dance 2" style="width:100%"></a>
+      <h4>KATHAK</h4>
+      <p>You can live your passion  by learning Kathak Dancing with our best reccomended classes.....</p>
+    </div></div>
+<div class="column dance">
+    <div class="content">
+    <a href="https://youtu.be/Kd-Va1m4s1E" ><img src="d3.jpg" alt="dance 3" style="width:100%"></a>
+      <h4>HIP-HOP DANCING</h4>
+      <p>You can live your passion  by learning Hip-Hop Dancing with our best reccomended classes.....</p>
+    </div></div>
+<div class="column dance">
+    <div class="content">
+    <a href="https://youtu.be/Ka6EJtQEiVk" ><img src="d1.jpg" alt="dance 4" style="width:100%"></a>
+      <h4>CONTEMPORARY DANCING</h4>
+      <p>You can live your passion  by learning Contemporary Dancing with our best reccomended classes.....</p>
+    </div></div>
+<div class="column dance">
+    <div class="content">
+    <a href="https://youtu.be/5Lc-XZaLZWE" ><img src="d5.jpg" alt="dance 5" style="width:100%"></a>
+      <h4>JAZZ DANCING</h4>
+      <p>You can live your passion  by learning JAZZ Dancing with our best reccomended classes.....</p>
+    </div></div>
+<div class="column music">
+    <div class="content">
+    <a href="https://youtu.be/vSakoBvdIvU" ><img src="mu2.jpg" alt="music 1" style="width:100%"></a>
+      <h4>GUITAR</h4>
+      <p>You can live your passion  by learning how to play guitar with our best reccomended classes.....</p>
+    </div></div>
+
+
+<div class="column music">
+    <div class="content">
+    <a  href="https://youtu.be/SyoMvTgetGg" ><img src="mu1.jpg" alt="music 2" style="width:100%"></a>
+      <h4>VIOLIN</h4>
+      <p>You can live your passion  by learning how to play violin with our best reccomended classes.....</p>
+    </div></div>
+<div class="column music">
+    <div class="content">
+    <a href="https://youtu.be/EPxqPw1N1Qk" ><img src="mu5.jpg" alt="music 3" style="width:100%"></a>
+      <h4>PIANO</h4>
+      <p>You can live your passion  by learning how to play piano with our best reccomended classes.....</p>
+    </div></div>
+<div class="column music">
+    <div class="content">
+   <a href="https://youtu.be/ondTlJEmPYA" ><img src="mu4.jpg" alt="music 4" style="width:100%"></a>
+      <h4>DRUMS</h4>
+      <p>You can live your passion  by learning how to play drums with our best reccomended classes.....</p>
+    </div></div>
+<div class="column music">
+    <div class="content">
+    <a href="https://www.youtube.com/watch?v=G2kKJ8w7hNw" ><img src="gy.jpg" alt="music 5" style="width:100%"></a>
+      <h4>SAXOPHONE</h4>
+      <p>You can live your passion  by learning how to play saxophone with our best reccomended classes.....</p>
+    </div></div>
+<div class="column craft">
+    <div class="content">
+    <a href="https://youtu.be/kfXXsLLDnhQ" ><img src="p2.jpg" alt="c1" style="width:100%"></a>
+      <h4>TEXTILE</h4>
+      <p>You can enjoy your creative side by learning textile with our best reccomended classes.....</p>
+    </div></div>
+<div class="column craft">
+    <div class="content">
+    <a href="https://youtu.be/kUCUQu42G14" ><img src="p4.jpg" alt="c2" style="width:100%"></a>
+      <h4>ORIGAMI</h4>
+      <p>You can enjoy your creative side by learning ORIGAMI with our best reccomended classes.....</p>
+    </div></div>
+<div class="column craft">
+    <div class="content">
+    <a href=https://www.youtube.com/watch?v=VkatHRaEVaY><img src="p1.jpg" alt="c3" style="width:100%"></a>
+      <h4>DECORATING CRAFT</h4>
+      <p>You can enjoy your creative side by learning decorating crafts with our best reccomended classes.....</p>
+    </div></div>
+<div class="column craft">
+    <div class="content">
+   <a href="https://youtu.be/AKmLDwknvZY" ><img src="c4.jpg" alt="c4" style="width:100%"></a>
+      <h4>FASHION CRAFTING</h4>
+      <p>You can enjoy your creative side by learning fashion crafting with our best reccomended classes.....</p>
+    </div></div>
+<div class="column craft">
+    <div class="content">
+   <a href=https://www.youtube.com/watch?v=HpPhFhwgkCo" ><img src="p3.jpg" alt="c5" style="width:100%"></a>
+      <h4>FUNCTIONAL CRAFTING</h4>
+      <p>You can enjoy your creative side by learning functional crafting with our best reccomended classes.....</p>
+    </div></div>
+<div class="column paint">
+    <div class="content">
+    <a href="https://youtu.be/W4BYGrn7ACM" ><img src="pp1.jpg" alt="p1" style="width:100%"></a>
+      <h4>OIL PAINTING </h4>
+      <p>You can enjoy your creative side by learning oil painting with our best reccomended classes.....</p>
+    </div></div>
+<div class="column paint">
+    <div class="content">
+   <a href=" https://youtu.be/cTV-bXJBKcM" ><img src="pp4.jpeg" alt="p2" style="width:100%"></a>
+      <h4>SAND ART </h4>
+      <p>You can enjoy your creative side by learning sand art with our best reccomended classes.....</p>
+    </div></div>
+<div class="column paint">
+    <div class="content">
+    <a href="https://youtu.be/W4BYGrn7ACM" ><img src="pp3.jpg" alt="p3" style="width:100%"></a>
+      <h4>WATERCOULORING</h4>
+      <p>You can enjoy your creative side by learning water colouring with our best reccomended classes.....</p>
+    </div></div>
+<div class="column paint">
+    <div class="content">
+    <a href="https://youtu.be/iweVD-sW0Yg" ><img src="pp2.jpg" alt="p4" style="width:100%"></a>
+      <h4>DIGITAL </h4>
+      <p>You can enjoy your creative side by learning digital painting with our best reccomended classes.....</p>
+    </div></div>
+<div class="column paint">
+    <div class="content">
+    <a href="https://youtu.be/GdhsgkDRhEM" ><img src="pp5.jpg" alt="p5" style="width:100%"></a>
+      <h4>CREATIVE PAINTING </h4>
+      <p>You can enjoy your creative side by learning  creative painting with our best reccomended classes.....</p>
+    </div></div>
+<div class="column cook">
+    <div class="content">
+    <a href="https://youtu.be/3HWPq0XJUd8"><img src="f1.jpg" alt="f1" style="width:100%"></a>
+      <h4>CONTINENTAL CUSINE</h4>
+      <p>Looking for good cooking classes so here our website teach you cooking CONTINENTAL CUSINE in easy way ...........</p>
+    </div></div>
+<div class="column cook">
+    <div class="content">
+    <a href="https://youtu.be/MyPKPRv0q7s"><img src="f2.jpg" alt="f2" style="width:100%"></a>
+      <h4>ITALIAN CUSINE</h4>
+      <p>Looking for good cooking classes so here our website teach you cooking ITALIAN CUSINE in easy way ...........</p>
+    </div></div>
+<div class="column cook">
+    <div class="content">
+    <a href="https://youtu.be/0gCZ0ilKsA8"><img src="f3.jpg" alt="f3" style="width:100%"></a>
+      <h4>INDIAN CUSINE</h4>
+      <p>Looking for good cooking classes so here our website teach you cooking INDIAN CUSINE in easy way ...........</p>
+    </div></div>
+<div class="column cook">
+    <div class="content">
+    <a href=https://youtu.be/b_V7GRWbSIM"><img src="f4.jpg" alt="f4" style="width:100%"></a>
+      <h4>AMERICAN CUSINE</h4>
+      <p>Looking for good cooking classes so here our website teach you cooking AMERICAN CUSINE in easy way ...........</p>
+    </div></div>
+<div class="column cook">
+    <div class="content">
+    <a href="https://youtu.be/J3tCBVTgzLg"><img src="f5.jpg"  alt="f1" style="width:100%"></a>
+      <h4>CHINEESE CUSINE</h4>
+      <p>Looking for good cooking classes so here our website teach you cooking CHINEESE CUSINE in easy way ...........</p>
+    </div></div>
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("paint")
+
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
